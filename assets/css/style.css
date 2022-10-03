@@ -107,10 +107,10 @@ body {
 
 #nav-bar a {
     color: white;
-    flex-basis: 3em;
     font-size: 1em;
     text-align: center;
     padding-inline-end: 1em;
+    padding-inline-start: 0.5em;
 }
 
 #nav-bar a:visited {
