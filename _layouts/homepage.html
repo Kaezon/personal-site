@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div id="page-header">
+  Brett <img class="header-logo" src={{ "/assets/img/logo_border_3d.svg" | relative_url }}> Costabile
+</div>
+<div id="content-left"></div>
+<div id="column-center-main" class="content-center">
+  <div class="content-gold-trim-outer">
+    <div class="content-gold-trim-inner content-center">
+      <h1>🚧 Work Zone 🚧</h1>
+      <p>This site is still in the early stages of development.</p>
+    </div>
+  </div>
+  <div class="content-gold-trim-outer">
+    <div class="content-gold-trim-inner">
+      <h2>Latest Posts</h2>
+      <ul class="post-list">
+        {% assign maxPost = 5 %}
+        {% assign counter = 0 %}
+        {% for post in site.posts %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a>
+          <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </li>
+          {% assign counter = counter | plus: 1 %}
+          {% if counter == maxPost %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="content-right">
+  <div class="right-side-content">
+    <h3>Brett Costabile</h3>
+    <hr class="dashed">
+    <p>
+      Interested in distributed and P2P networks.
+      Serially addicted to Kubernetes.
+      Perpetually making things harder formyself.
+    </p>
+  </div>
+  <div class="right-side-content">
+    <h3>Links</h3>
+    <hr class="dashed">
+    <ul class="right-side-links">
+      <li><a href="https://github.com/Kaezon" rel="me">Github</a></li>
+      <li><a href="https://indieweb.org">IndieWeb</a></li>
+    </ul>
+  </div>
+</div>

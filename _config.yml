@@ -1,0 +1,13 @@
+name: Brett's Personal Site
+email: kaezontpa@gmail.com
+description: This is a test.
+url: https://mydomain.com
+author: Brett Costabile
+
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "old-site/"]
+timezone: America/Detroit
+collections:
+- ascii_art
+- copypastas
+plugins:
+- jekyll-feed

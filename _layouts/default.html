@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href={{ "/assets/css/style.css" | relative_url }} />
+  <link rel="icon" href={{ "/assets/img/fav.ico" | relative_url }}>
+  <meta name="theme-color" content="">
+</head>
+<body>
+  <div id="body-bg"></div>
+  <div id="nav-bar">
+    <div class="arrow"></div><a href={{ "index.html" | relative_url }}>Home</a>
+    <div class="arrow"></div><a href={{ "blog.html" | relative_url }}>Blog</a>
+  </div>
+  {{ content }}
+</body>
+</html>
