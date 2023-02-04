@@ -73,6 +73,8 @@ body {
     border: 20px solid white;
     border-image-slice: 15 15;
     border-image-source: url(../img/border.svg);
+    display: flex;
+    flex-direction: column;
     margin: 15px;
     min-width: 500px;
     width: 80%;
@@ -86,6 +88,7 @@ body {
     overflow: auto;
     padding-left: 50px;
     padding-right: 25px;
+    padding-bottom: 1em;
 }
 
 .content-gold-trim-inner p {
@@ -182,4 +185,29 @@ ul.right-side-links {
     list-style-type: none;
     list-style-position: outside;
     padding-left: 1rem;
+}
+
+.inline-image {
+    display: block;
+    border-color: goldenrod;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 1px;
+    height: 1.3em;
+    margin-right: 0.3em;
+}
+
+.post-meta-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-meta-footer {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.post-meta-footer-tag {
+    margin-left: 0.5em;
 }

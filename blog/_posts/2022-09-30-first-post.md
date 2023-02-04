@@ -2,7 +2,7 @@
 layout: blog-post
 title: Every Blog Has It's First Post
 date: 2022-11-16 12:00:00 -0500
-tags: blog
+tags: [blog]
 ---
 Here it is! My first blog post.
 This honestly isn't something I ever saw myself doing, but making my own space to speak my mind has felt more and more important lately. Besides that, I haven't made a web page since the 90's and it felt like a good challenge.

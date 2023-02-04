@@ -5,10 +5,23 @@ layout: default
   <div class="content-gold-trim-outer">
     <div class="content-gold-trim-inner">
       <h1 class="p-name">{{ page.title }}</h1>
-      <span class="dt-published">{{ page.date | date: "%b %-d, %Y" }}</span>
+      <span class="post-meta-header">
+        <span class="p-author h-card">
+          <a class="u-url" href="{{ site.url }}">
+            <img class="u-photo inline-image" src="{{ '/assets/img/avatar_small.png' | relative_url }}" alt="Brett Costabile" title="by Brett Costabile">
+          </a>
+        </span>
+        <span class="dt-published">{{ page.date | date: "%b %-d, %Y" }}</span>
+      </span>
       <hr>
       <div class="e-content">
         {{ content }}
+      </div>
+      <hr>
+      <div class="post-meta-footer">
+        {% for tag in page.tags %}
+        <span class="p-category post-meta-footer-tag">#{{ tag }}</span>
+        {% endfor %}
       </div>
     </div>
   </div>
