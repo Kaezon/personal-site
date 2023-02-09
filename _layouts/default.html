@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="The personal site of Brett Costabile" />
   <meta name="author" content="Brett Costabile">
+  {% if page.tags %}
+  <meta name="keywords" content={{ page.tags | join: ", " }}>
+  {% endif %}
+  <meta name="robots" content="all">
   <link rel="stylesheet" type="text/css" href={{ "/assets/css/style.css" | relative_url }} />
   <link rel="icon" href={{ "/assets/img/fav.ico" | relative_url }}>
   <meta name="theme-color" content="">
