@@ -10,3 +10,14 @@ collections:
 - ascii_art
 plugins:
 - jekyll-feed
+- jekyll-webmention_io
+
+webmentions:
+  username: bcost.site
+  cache_bad_uris_for: 5
+  pause_lookups: false
+  throttle_lookups:
+    last_week: daily
+    last_month: weekly
+    last_year: every 2 weeks
+    older: monthly

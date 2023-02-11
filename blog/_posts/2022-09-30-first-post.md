@@ -2,6 +2,7 @@
 layout: blog-post
 title: Every Blog Has It's First Post
 date: 2022-11-16 12:00:00 -0500
+webmentionsEnabled: true
 tags: [blog]
 ---
 Here it is! My first blog post.

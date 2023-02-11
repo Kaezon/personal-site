@@ -28,4 +28,18 @@ layout: default
       </div>
     </div>
   </div>
+
+  {% if page.webmentionsEnabled %}
+  {% webmentions page.url replies %}
+  {% assign replies = webmentions %}
+  <div class="comment-container">
+    {% if replies.size > 0 %}
+    {{ replies }}
+    {% else %}
+    <div>
+      No replies yet
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
 </div>

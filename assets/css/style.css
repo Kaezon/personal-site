@@ -76,7 +76,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 15px;
-    min-width: 500px;
+    max-width: 50em;
+    min-width: 30em;
     width: 80%;
 }
 
@@ -89,6 +90,21 @@ body {
     padding-left: 50px;
     padding-right: 25px;
     padding-bottom: 1em;
+}
+
+.comment-container {
+    background-color: #595959;
+    border-color: silver;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    min-height: 3rem;
+    min-width: 30em;
+    max-width: 50em;
+    padding: 1em;
+    width: 65%;
 }
 
 .content-gold-trim-inner p {
