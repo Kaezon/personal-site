@@ -20,8 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install libssl-dev  # Required for the Jekyll webmentions plugin
-      run: sudo apt install -y libssl-dev
+    - name: Install SSL prerequisites  # Required for the Jekyll webmentions plugin
+      run: sudo apt install -y libssl-dev openssl
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
