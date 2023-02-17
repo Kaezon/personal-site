@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install libssl-dev  # Required for the Jekyll webmentions plugin
-      run: apt install -y libssl-dev
+      run: sudo apt install -y libssl-dev
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
