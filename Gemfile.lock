@@ -12,7 +12,7 @@ GEM
     execjs (2.8.1)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    google-protobuf (3.21.12-x86_64-linux)
+    google-protobuf (3.21.12)
     htmlbeautifier (1.4.2)
     http_parser.rb (0.8.0)
     httparty (0.15.7)
@@ -61,8 +61,10 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_portile2 (2.8.1)
     multi_xml (0.6.0)
-    nokogiri (1.14.1-x86_64-linux)
+    nokogiri (1.14.1)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     openssl (2.2.3)
       ipaddr
@@ -100,6 +102,7 @@ DEPENDENCIES
   jekyll (~> 4.3.2)
   jekyll-feed
   jekyll-webmention_io
+  openssl
 
 BUNDLED WITH
    2.1.2
