@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install SSL prerequisites  # Required for the Jekyll webmentions plugin
-      run: sudo apt install -y libssl-dev openssl
+      run: sudo apt install -y libssl-dev=1.1.1f-1ubuntu2.17 openssl=1.1.1f-1ubuntu2.17
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
