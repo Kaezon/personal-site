@@ -17,7 +17,7 @@ GEM
       ffi (>= 1.0.0)
       rake
     forwardable-extended (2.6.0)
-    google-protobuf (3.22.1-x86_64-linux)
+    google-protobuf (3.22.2-x86_64-linux)
     htmlbeautifier (1.4.2)
     http (5.1.1)
       addressable (~> 2.8)
@@ -92,7 +92,7 @@ GEM
     rexml (3.2.5)
     rouge (4.1.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.58.3-x86_64-linux-gnu)
+    sass-embedded (1.60.0-x86_64-linux-gnu)
       google-protobuf (~> 3.21)
     string_inflection (0.1.2)
     terminal-table (3.0.2)
@@ -113,10 +113,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  jekyll (~> 4.3.2)
-  jekyll-feed
-  jekyll-webmention_io
-  openssl
+  jekyll (~> 4.3, >= 4.3.2)
+  jekyll-feed (~> 0.17.0)
+  jekyll-webmention_io (~> 3.3, >= 3.3.7)
 
 BUNDLED WITH
    2.4.7
