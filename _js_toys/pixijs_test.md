@@ -1,7 +1,7 @@
 ---
-layout: blog-post-ascii-art
+layout: pixijs-post
 scripts:
-  - url: /assets/js/pixijs.min.js
+  - url: /assets/js/pixi.min.js
     is_local: true
 ---
 <script>
