@@ -16,6 +16,13 @@
   {% endif %}
   <link rel="stylesheet" type="text/css" href={{ "/assets/css/style.css" | relative_url }} />
   <link rel="icon" href={{ "/assets/img/fav.ico" | relative_url }}>
+  {% for script in page.scripts %}
+    {% if script.is_local %}
+    <script src={{ script.url | relative_url }}></script>
+    {% else %}
+    <script src={{ script.url }}></script>
+    {% endif %}
+  {% endfor %}
 </head>
 <body>
   <div id="body-bg"></div>

@@ -8,6 +8,7 @@ exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/c
 timezone: America/Detroit
 collections:
 - ascii_art
+- js_toys
 plugins:
 - jekyll-feed
 - jekyll-webmention_io
