@@ -14,8 +14,14 @@
   {% if page.webmentionsEnabled %}
   {% webmentions_head %}
   {% endif %}
-  <link rel="stylesheet" type="text/css" href={{ "/assets/css/style.css" | relative_url }} />
   <link rel="icon" href={{ "/assets/img/fav.ico" | relative_url }}>
+  <link rel="stylesheet" type="text/css" href={{ "/assets/css/style.css" | relative_url }} />
+  {% if page.codeHighlightingEnabled %}
+  <link rel="stylesheet" href={{ "/assets/css/highlight.min.css" | relative_url }}>
+  <link rel="stylesheet" href={{ "/assets/css/highlight.style.css" | relative_url }}>
+  <script src={{ "/assets/js/highlight.min.js" | relative_url }}></script>
+  <script>hljs.highlightAll();</script>
+  {% endif %}
   {% for script in page.scripts %}
     {% if script.is_local %}
     <script src={{ script.url | relative_url }}></script>
@@ -29,6 +35,7 @@
   <div id="nav-bar">
     <div class="arrow"></div><a href={{ "index.html" | relative_url }}>Home</a>
     <div class="arrow"></div><a href={{ "blog.html" | relative_url }}>Blog</a>
+    <div class="arrow"></div><a href={{ "js-gallery.html" | relative_url }}>JS Gallery</a>
     <div class="arrow"></div><a href={{ "feed.xml" | relative_url }}>RSS Feed</a>
   </div>
   {{ content }}

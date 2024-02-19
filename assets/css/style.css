@@ -4,6 +4,10 @@
     --page-inner-margin: 2rem;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #262626;
     color: white;
@@ -76,7 +80,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 15px;
-    max-width: 50em;
+    max-width: 40em;
     min-width: 30em;
     width: 80%;
 }
@@ -86,10 +90,14 @@ body {
     height: 100%;
     outline: 2px solid gold;
     outline-offset: -6px;
-    overflow: auto;
     padding-left: 50px;
     padding-right: 25px;
     padding-bottom: 1em;
+}
+
+.padding-lr-25px {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .comment-container {
@@ -226,4 +234,8 @@ ul.right-side-links {
 
 .post-meta-footer-tag {
     margin-left: 0.5em;
+}
+
+.no-margin {
+    margin: 0px;
 }

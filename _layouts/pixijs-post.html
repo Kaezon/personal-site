@@ -1,14 +1,20 @@
 ---
 layout: default
 ---
-<div id="content-center">
+
+<div class="h-entry content-center">
   <div class="content-gold-trim-outer">
-    <div class="content-gold-trim-inner">
-      <div class="preserve-whitespace">
-        <div id="content">
-          {{ content }}
-        </div>
+    <div class="content-gold-trim-inner padding-lr-25px">
+      <h1 class="p-name">{{ page.title }}</h1>
+      <div id="content" style="margin-left: auto; margin-right: auto; display: flex; flex-direction: column;">
+        {{ content }}
       </div>
+      <hr>
+      <pre class="no-margin">
+        <code>
+          {{ content }}
+        </code>
+      </pre>
     </div>
   </div>
 </div>
