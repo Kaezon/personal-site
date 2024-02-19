@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div id="page-header">
+    Javascript Gallery
+</div>
+<div id="column-center-post" class="content-center">
+    <div class="content-gold-trim-outer">
+        <div class="content-gold-trim-inner">
+            <h2>Post Directory</h2>
+            <ul class="post-list">
+                {% for post in site.js_toys %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
