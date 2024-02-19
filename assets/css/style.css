@@ -80,7 +80,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 15px;
-    max-width: 40em;
+    max-width: 45em;
     min-width: 30em;
     width: 80%;
 }
@@ -238,4 +238,9 @@ ul.right-side-links {
 
 .no-margin {
     margin: 0px;
+}
+
+.margin-lr-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
