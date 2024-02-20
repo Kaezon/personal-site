@@ -1,9 +1,13 @@
 ---
 layout: pixijs-post
 title: Starmap - Random Distribution
+category: PixiJS
 scripts:
 - url: /assets/js/pixi.min.js
   is_local: true
+footnotes:
+- url: https://pixijs.com/
+  note: PixiJS homepage
 codeHighlightingEnabled: true
 ---
 <script>
