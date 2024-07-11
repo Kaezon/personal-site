@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="h-entry content-center">
+  <div class="content-gold-trim-outer">
+    <div class="content-gold-trim-inner padding-lr-25px">
+      <h1 class="p-name">{{ page.title }}</h1>
+      <div id="content" class="content-center">
+        {{ content }}
+      </div>
+      <hr>
+      <pre class="no-margin">
+        <code>
+          {{ content }}
+        </code>
+      </pre>
+      {% if page.footnotes %}
+      {% assign counter = 1 %}
+      <hr>
+      <h3>Footnotes</h3>
+      <p>
+      {% for footnote in page.footnotes %}
+      {% if footnote.url %}
+      <a class="u-url" href="{{ footnote.url }}">[ {{counter}} ]</a> - {{ footnote.note | default: footnote.url }}<br>
+      {% else %}
+      [ {{counter}} ] - {{ footnote.note }}<br>
+      {% endif %}
+      {% assign counter = counter | plus: 1 %}
+      {% endfor %}
+      </p>
+      {% endif %}
+    </div>
+  </div>
+</div>

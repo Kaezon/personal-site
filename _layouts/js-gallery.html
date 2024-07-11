@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div id="page-header">
+    Javascript Gallery
+</div>
+<div id="column-center-post" class="content-center">
+    <div class="content-gold-trim-outer">
+        <div class="content-gold-trim-inner">
+            {% assign groups = site.js_toys | group_by: "category" | sort: "name" %}
+            {% for group in groups %}
+            <h2>{{ group.name }}</h2>
+            <ul class="post-list">
+                {% for post in group.items %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+</div>

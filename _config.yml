@@ -7,13 +7,17 @@ author: Brett Costabile
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "old-site/"]
 timezone: America/Detroit
 collections:
-- ascii_art
+  ascii_art:
+    output: false
+  js_toys:
+    output: true
 plugins:
 - jekyll-feed
 - jekyll-webmention_io
 
 webmentions:
   username: bcost.site
+  cache_folder: _data
   cache_bad_uris_for: 5
   pause_lookups: false
   throttle_lookups:
